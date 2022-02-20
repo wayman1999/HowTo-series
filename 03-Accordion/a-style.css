@@ -1,0 +1,36 @@
+body{
+    background-color: aliceblue;
+}
+/*CSS of buttons*/
+.secBtn{
+    width: 100%;
+    border: none;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    font-size: 20px;
+    padding: 18px;
+    outline: none;
+}
+.secBtn:hover,.active{
+    background-color: #ccc;
+}
+.secBtn:after{
+    content: '\002B';
+    float: right;
+    color: #777;
+    font-weight: bold;
+}
+.active:after{
+    content: '\2212';
+}
+/*CSS of panels*/
+.panel{
+    background-color: aliceblue;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
