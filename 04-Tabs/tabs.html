@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabStyle.css">
+    <script src="tabScript.js" defer></script>
+    <title>How to make a TAB</title>
+</head>
+<body>
+    <h2>Tabs</h2>
+    <p>Click the buttons to check the tabs.</p>
+    <!--The nav of the tab-->
+    <div class="tabs">
+        <button class="btn" onclick="showCard(event,'London')" id="active">London</button>
+        <button class="btn" onclick="showCard(event,'Paris')">Paris</button>
+        <button class="btn" onclick="showCard(event,'Tokyo')">Tokyo</button>
+    </div>
+    <!--The contents in the tab cards-->
+    <div class="card" id="London">
+        <span class="delBtn" onclick="this.parentElement.style.display='none'"><b>&times;</b></span>
+        <h3>London</h3>
+        <p>London is the capital of England.</p>
+    </div>
+    <div class="card" id="Paris">
+        <span class="delBtn" onclick="this.parentElement.style.display='none'"><b>&times;</b></span>
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+    </div>
+    <div class="card" id="Tokyo">
+        <span class="delBtn" onclick="this.parentElement.style.display='none'"><b>&times;</b></span>
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+</body>
+</html>
